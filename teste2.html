@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="titulo">Minha calculadora DOM</h2>
+
+    <input type="number" name="n1" id="n1" placeholder="primeiro numero">
+
+    <input type="submit" value="+" id="btn_soma" onclick="soma()">
+
+    <input type="submit" value="-" id="btn_subtrair" onclick="subtrair()">
+
+    <input type="submit" value="*" id="btn_multiplica" onclick="multiplica()">
+
+    <input type="submit" value="/" id="btn_dividir" onclick="dividir()">
+
+    <input type="number" name="n2" id="n2" placeholder="segundo numero">
+
+    <p id="resultado">Resultado:</p>
+</body>
+
+    <script>
+
+        function soma(){
+
+            document.getElementById("resultado").innerHTML = "resultado";
+
+            var n1 = document.getElementById("n1").value;
+
+            n1 = Number(n1);
+
+            var n2 = document.getElementById("n2").value;
+
+            n2 = Number(n2);
+
+            console.log(typeof(n1))
+
+            //var op = document.getElementById("btn_soma").value;
+
+            var resultado = n1 +  n2;
+
+            document.getElementById("resultado").innerHTML += resultado;
+
+        }
+
+        function subtrair(){
+
+            document.getElementById("resultado").innerHTML = "resultado";
+
+
+            var n1 = document.getElementById("n1").value;
+
+            n1 = Number(n1)
+
+            var n2 = document.getElementById("n2").value;
+
+            n2 = Number(n2)
+
+            var resultado = n1 - n2;
+
+            document.getElementById("resultado").innerHTML += resultado;
+
+        }
+
+        function multiplica(){
+
+            document.getElementById("resultado").innerHTML = "resultado";
+
+
+            var n1 = document.getElementById("n1").value;
+
+            n1 = Number(n1)
+
+            var n2 = document.getElementById("n2").value;
+
+            n2 = Number(n2)
+
+            var resultado = n1 * n2;
+
+            document.getElementById("resultado").innerHTML += resultado;
+
+        }
+
+        function dividir(){
+
+            document.getElementById("resultado").innerHTML = "resultado";
+
+
+            var n1 = document.getElementById("n1").value;
+
+            n1 = Number(n1)
+
+            var n2 = document.getElementById("n2").value;
+
+            n2 = Number(n2)
+
+            var resultado = n1 / n2;
+
+             document.getElementById("resultado").innerHTML += resultado;
+
+        }
+
+    </script>
+</html>
